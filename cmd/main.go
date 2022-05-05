@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println("path", os.Args[0])
+	fmt.Println("path", os.Args[1])
 }
