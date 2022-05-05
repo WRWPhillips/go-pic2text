@@ -1,7 +1,7 @@
-package main
+package image
 
 import "fmt"
 
-func main() {
+func image() {
 	fmt.Println("perfect")
 }
