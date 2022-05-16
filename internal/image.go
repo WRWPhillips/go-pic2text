@@ -13,6 +13,7 @@ type Options struct {
 	Width   int
 	Height  int
 	Palette string
+	Reverse bool
 }
 
 func loadImage(path string) (image.Image, error) {
@@ -34,8 +35,26 @@ func (opt *Options) String() string {
 	return process(img, opt)
 }
 
+func reverse(input string) string {
+	n := 0
+	rune := make([]rune, len(input))
+	for _, r := range input {
+		rune[n] = r
+		n++
+	}
+	rune = rune[0:n]
+	for i := 0; i < n/2; i++ {
+		rune[i], rune[n-1-i] = rune[n-1-i], rune[i]
+	}
+	output := string(rune)
+	return output
+}
+
 func process(img image.Image, options *Options) string {
 	result := make([]byte, options.Width*options.Height+options.Height)
+	if options.Reverse == true {
+		options.Palette = reverse(options.Palette)
+	}
 
 	chunkWidth, chunkHeight := chunkSizes(img, options)
 
