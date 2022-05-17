@@ -53,6 +53,7 @@ Input image:
 ![Input](assets/input.jpeg)
 <br />
 Output image:
+<br />
 ![Output](assets/output.jpeg)
 
 Prof image:
