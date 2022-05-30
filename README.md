@@ -1,3 +1,4 @@
+<div>
   <h3 align="center">Go-Pic2Text</h3>
 
   <p align="center">
@@ -45,8 +46,20 @@ The ascii image printed to terminal currently has a cutoff of image width/height
 this is usually not a big number depending on the specific numbers of the pixels / columns or rows specified, but it's something Id like 
 to fix in the future.
 
+## Images 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Input image:
+<br />
+![Input](assets/input.jpeg)
+<br />
+Output image:
+<br />
+![Output](assets/output.jpeg)
+
+Prof image:
+* This image depicts prof output for data on execution time and resources, showing that the vast majority of the time the program took was devoted to image format conversion. The times aren't reflective of what they'd look like on a real computer, as I took this on a raspberry pi that was running a lot of other processes at the time.
+![prof](assets/prof.png)
+
 
 
 
@@ -55,8 +68,6 @@ to fix in the future.
 This project was built entirely in Go.
 
 * [Golang](https://go.dev/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -114,8 +125,6 @@ To run this program, cd into the main directory and type go run cmd/main.go
   
   -- default false 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- CONTACT -->
 ## Contact
@@ -124,7 +133,6 @@ Will Phillips - [Add me on LinkedIn](https://www.linkedin.com/in/wrwphillips/) -
 
 Project Link: [https://github.com/WRWPhillips/go-pic2text](https://github.com/WRWPhillips/go-pic2text)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
   
