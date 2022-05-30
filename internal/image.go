@@ -2,7 +2,9 @@ package internal
 
 import (
 	"image"
-	"image/jpeg"
+	_ "image/jpeg"
+	_ "image/png"
+
 	"os"
 )
 
@@ -23,7 +25,11 @@ func loadImage(path string) (image.Image, error) {
 	}
 	defer f.Close()
 
-	return jpeg.Decode(f)
+	img, _, err := image.Decode(f)
+	if err != nil {
+		return nil, err
+	}
+	return img, err
 }
 
 func (opt *Options) String() string {
