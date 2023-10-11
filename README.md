@@ -129,7 +129,7 @@ To run this program, cd into the main directory and type go run cmd/main.go
 <!-- CONTACT -->
 ## Contact
 
-Will Phillips - [Add me on LinkedIn](https://www.linkedin.com/in/wrwphillips/) - 42WPhillips42@gmail.com
+Will Phillips - [Add me on LinkedIn](https://www.linkedin.com/in/wrwphillips/)
 
 Project Link: [https://github.com/WRWPhillips/go-pic2text](https://github.com/WRWPhillips/go-pic2text)
 
